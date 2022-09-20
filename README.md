@@ -1,0 +1,1 @@
+<p>Repositório criado para salvar todo o meu processo de estudo do módulo <strong>Guia Estelar JavaScript</strong> que fica dentro do <a href="https://www.rocketseat.com.br/discover">Discover</a>, programa gratuito da <a href="https://rocketseat.com.br"> Rocketseat 💜</a>.</p>
