@@ -5,12 +5,21 @@ var name
 name = 'João'
 
 // que tipo de dado foi colocado com a função typeof
-console.log(typeof name)
+// console.log(typeof name)
 
-// agripando declarations
+// agrupando declarations
 let age, isHuman
 
 age = 18
 isHuman = true
 
-console.log(name, age, isHuman)
+// multiplos agrumentos na funcao
+// console.log(name, age, isHuman)
+
+// escita de texto + variáveis
+
+// concatenando valores
+// console.log('o ' + name + ' tem ' + age + ' anos.')
+
+// interpolando valores com template literals or tamplate strings
+console.log(`o ${name} tem ${age} anos.`)
