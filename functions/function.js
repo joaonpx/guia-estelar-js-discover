@@ -23,8 +23,22 @@
 // console.log(subject)
 
 // arrow function
-let sayEae = () => {
-  console.log('eae')
+// let sayEae = () => {
+//   console.log('eae')
+// }
+
+// sayEae()
+
+// callback function
+
+function sayMyName(name) {
+  console.log('antes de executar a callback')
+
+  name()
+
+  console.log('depois de executar a callback')
 }
 
-sayEae()
+sayMyName(() => {
+  console.log('João')
+})
