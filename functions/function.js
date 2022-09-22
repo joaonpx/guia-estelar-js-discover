@@ -12,12 +12,19 @@
 // console.log(`o resultado é ${sum(number1, number2)}`)
 
 // function scope
-let subject = 'study'
+// let subject = 'study'
 
-function pinto(subject) {
-  subject = 'read'
-  return subject
+// function pinto(subject) {
+//   subject = 'read'
+//   return subject
+// }
+
+// console.log(pinto(subject))
+// console.log(subject)
+
+// arrow function
+let sayEae = () => {
+  console.log('eae')
 }
 
-console.log(pinto(subject))
-console.log(subject)
+sayEae()
