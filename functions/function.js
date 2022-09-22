@@ -31,14 +31,28 @@
 
 // callback function
 
-function sayMyName(name) {
-  console.log('antes de executar a callback')
+// function sayMyName(name) {
+//   console.log('antes de executar a callback')
 
-  name()
+//   name()
 
-  console.log('depois de executar a callback')
+//   console.log('depois de executar a callback')
+// }
+
+// sayMyName(() => {
+//   console.log('João')
+// })
+
+// funções contrutoras
+function Person(name, age, weight) {
+  this.name = name
+  this.age = age
+  this.weight = weight
+  this.walk = () => {
+    return `${this.name} está andando!`
+  }
 }
 
-sayMyName(() => {
-  console.log('João')
-})
+const joao = new Person('João', 18, 54.6)
+
+console.log(joao.name)
