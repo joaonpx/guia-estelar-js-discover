@@ -15,8 +15,8 @@ let cashier = {
 function sum(array) {
   let total = 0
 
-  for (let i in array) {
-    total += array[i]
+  for (let value of array) {
+    total += value
   }
 
   return total
