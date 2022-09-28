@@ -9,7 +9,7 @@
 
 let cashier = {
   revenues: [100, 250],
-  expenses: [28, 16, 89.5, 32]
+  expenses: [28, 16, 89.5, 10]
 }
 
 function sum(array) {
@@ -28,7 +28,15 @@ let expenses = sum(cashier.expenses)
 function calcBalance() {
   let balance = revenues - expenses
 
-  return balance
+  let message
+
+  if (balance > 0) {
+    message = `+${balance}`
+  } else {
+    message = `${balance}`
+  }
+
+  return `Saldo: ${message}`
 }
 
 console.log(calcBalance())
