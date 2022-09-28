@@ -8,14 +8,27 @@
 */
 
 let cashier = {
-  revenues: [100, 250, 1890],
+  revenues: [100, 250],
   expenses: [28, 16, 89.5, 32]
 }
 
 function sum(array) {
-  let total
+  let total = 0
+
+  for (let i in array) {
+    total += array[i]
+  }
 
   return total
 }
 
-console.log(sum(cashier.revenues))
+let revenues = sum(cashier.revenues)
+let expenses = sum(cashier.expenses)
+
+function calcBalance() {
+  let balance = revenues - expenses
+
+  return balance
+}
+
+console.log(calcBalance())
